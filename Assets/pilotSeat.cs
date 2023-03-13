@@ -32,8 +32,8 @@ public class pilotSeat : MonoBehaviour
             drivenDevice.SendMessage("toggleEngine", true);
             player.GetComponent<playerController>().canMove = false;
             player.GetComponent<Rigidbody2D>().Sleep();
-        targetCam.enabled = true;
-        interiorCam.enabled = false;
+            targetCam.enabled = true;
+            interiorCam.enabled = false;
     }
 
     public void exitSeat()
