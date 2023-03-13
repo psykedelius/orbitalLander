@@ -20,7 +20,7 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       // animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update()
@@ -29,16 +29,29 @@ public class playerController : MonoBehaviour
         {
 
             float moveInput = Input.GetAxisRaw("Horizontal");
-            rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-
-          //  animator.SetFloat("Speed", Mathf.Abs(moveInput));
-
+            rb.velocity     = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+            isGrounded      = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+            //  animator.SetFloat("Speed", Mathf.Abs(moveInput));
+            if (isGrounded)
+            {
+                animator.SetBool("isGrounded", true);
+            }
+            else
+            {
+                animator.SetBool("isGrounded", false);
+            }
             if (moveInput != 0)
             {
                 transform.localScale = new Vector3(moveInput, 1, 1);
+                animator.SetBool("inputX", true);
+
+            }
+            else
+            {
+                animator.SetBool("inputX", false);
             }
 
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+           
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {

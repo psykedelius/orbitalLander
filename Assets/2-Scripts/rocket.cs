@@ -35,16 +35,22 @@ public class rocket : MonoBehaviour
     public float impactTolerance = 2;
     float flipDelay = 0.5f;
     float coolDown = 0;
+    Canvas gpsUI;
     // Use this for initialization
     void Start()
     {
         _gameManager = GameObject.FindObjectOfType <gameManager> ();
         rb = GetComponent<Rigidbody2D>();
+        gpsUI = transform.Find("Canvas").GetComponent<Canvas>();
+        //si y'a un pilote on active le gps
+        if (hasPilot) { gpsUI.enabled = true; } else { gpsUI.enabled = false; }
+       
     }
 
     public void toggleEngine(bool isToggled)
     {
         hasPilot = isToggled;
+        gpsUI.enabled = isToggled;
     }
     // Update is called once per frame
     void Update()
