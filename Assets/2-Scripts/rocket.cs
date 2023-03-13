@@ -17,6 +17,7 @@ public class rocket : MonoBehaviour
     private Vector3 prevPosition;
     private Vector3 prevRotation;
     private bool isParented = false;
+    private bool isExploded = false;
 
     public float thrustForce; // strength of the rocket's thrust
     public float thrustSpeed = 5f;
@@ -134,10 +135,21 @@ public class rocket : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         _gameManager.onRestart();
     }
+
+    public void explode()
+    {
+        var explosion = GameObject.FindWithTag("Explosion");
+        explosion.transform.position = rb.position;
+        explosion.GetComponent<ParticleSystem>().Play();
+        isExploded = true;
+    }
+
     public void ondestroySpaceShip()
     {
-        print("BOOM!");
         isDestroyed = true;
+        // Hide spaceship
+        this.GetComponent<Renderer>().enabled = false;
+        if (!isExploded) explode();
         Invoke("onSpawnSpaceShip", 1);
     }
 
