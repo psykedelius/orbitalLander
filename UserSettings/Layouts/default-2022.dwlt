@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2544
     height: 1340
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -634,9 +634,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.9801445, y: -30.64879, z: -6.304913}
+    m_Target: {x: 5.808062, y: 4.169717, z: -5.7736444}
     speed: 2
-    m_Value: {x: -4.9801445, y: -30.64879, z: -6.304913}
+    m_Value: {x: 5.808062, y: 4.169717, z: -5.7736444}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -686,9 +686,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 54.705524
+    m_Target: 1.5786679
     speed: 2
-    m_Value: 54.705524
+    m_Value: 1.5786679
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -818,9 +818,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 72650000
-      m_LastClickedID: 25970
-      m_ExpandedIDs: 06fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 86c0ffff88e7ffff9ee8ffff84eaffff54ecffffc0effffff0f4fffffef9fffffa790000b8810000f88100003c820000aa830000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -936,23 +936,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/2-Scripts
+    - Assets/5-VFX
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/2-Scripts
+  - Assets/5-VFX
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Projets_perso\Unity\OrbitalLander
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa690000
-    m_LastClickedID: 27050
-    m_ExpandedIDs: 00000000826900008469000086690000886900008a6900008c6900008e69000000ca9a3b
+    m_SelectedIDs: 54690000
+    m_LastClickedID: 26964
+    m_ExpandedIDs: 00000000226900002469000026690000286900002a6900002c6900002e6900004669000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,7 +980,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000826900008469000086690000886900008a6900008c6900008e690000
+    m_ExpandedIDs: 00000000226900002469000026690000286900002a6900002c6900002e690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1488,9 +1488,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.8642216, y: -132.07689, z: -3.9897437}
+    m_Target: {x: 0.31093335, y: -135.87042, z: -4.0305195}
     speed: 2
-    m_Value: {x: 1.8642216, y: -132.07689, z: -3.9897437}
+    m_Value: {x: 0.31093335, y: -135.87042, z: -4.0305195}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1540,9 +1540,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.388525
+    m_Target: 12.466146
     speed: 2
-    m_Value: 8.388525
+    m_Value: 12.466146
   m_Ortho:
     m_Target: 1
     speed: 2
