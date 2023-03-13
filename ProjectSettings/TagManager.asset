@@ -6,6 +6,7 @@ TagManager:
   tags:
   - playerShip
   - affectedByPlanetGravity
+  - Explosion
   layers:
   - Default
   - TransparentFX
